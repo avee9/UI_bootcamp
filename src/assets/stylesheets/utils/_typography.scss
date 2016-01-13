@@ -1,0 +1,30 @@
+$font-stack: ('Open Sans', 'Helvetica', 'Arial', sans-serif);
+
+body {
+  font-family: $font-stack;
+  line-height: 1.25;
+}
+
+@include headings(1,6) {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.14;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11;
+}
