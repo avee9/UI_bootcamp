@@ -1,0 +1,25 @@
+.navigation-wrapper {
+  padding: 0.5rem;
+}
+
+.page-title, .navigation, .mobile-navigation {
+  float: left;
+}
+
+.page-title {
+  width: 50%;
+}
+
+.navigation {
+  display: none;
+}
+
+.mobile-navigation {
+  width: 49%;
+  border: 1px solid $input-border-color;
+
+  .label {
+    position: absolute;
+    left: -1000px;
+  }
+}

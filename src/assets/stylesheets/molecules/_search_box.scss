@@ -1,0 +1,25 @@
+.sub-header__search {
+  text-align: center;
+
+  .label {
+    position: absolute;
+    left: -1000px;
+  }
+}
+
+.search__input, .search__button {
+  float: left;
+}
+
+.search__input {
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.search__button {
+  border: none;
+  width: 10%;
+  height: 1.5rem;
+  background: url("../images/search_icon.png") no-repeat;
+  background-size: contain;
+}

@@ -9,7 +9,8 @@ header.header
     form.sub-header__search(method='POST', action='/search', autocomplete)
       label.label(for='search') Search Website
       input#search.search__input(type='search', placeholder="Enter search terms", name='search')
-      button.search__button(type='submit') Search
+      button.search__button(type='submit')
+    .clearfix
 
   .navigation-wrapper
     h1.page-title Page title
@@ -34,3 +35,4 @@ header.header
         option Accessories
         option Apparel
         option Featured Items
+    .clearfix

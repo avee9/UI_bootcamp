@@ -1,0 +1,14 @@
+.cart__count, .cart__icon {
+  float: left;
+}
+
+.cart__count {
+  padding-right: 0.5em;
+}
+
+.cart__icon {
+  background: url('../images/cart_icon.png') no-repeat;
+  background-size: cover;
+  width: 1.5rem;
+  height: 1.5rem;
+}

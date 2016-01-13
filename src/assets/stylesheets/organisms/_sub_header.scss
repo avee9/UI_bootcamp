@@ -1,0 +1,20 @@
+.sub-header {
+  padding: 0.5rem;
+  background-color: $header-background-color;
+}
+
+.cart, .sub-header__link, .sub-header__search {
+  float: left;
+}
+
+.cart {
+  width: 21%;
+}
+
+.sub-header__link {
+  width: 29%;
+}
+
+.sub-header__search {
+  width: 50%;
+}
