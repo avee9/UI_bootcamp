@@ -1,33 +1,39 @@
-form(action='', method='POST')
-  div
-    label(for='name') Name
-    input#name(type='text', name='name', placeholder='Enter full name', maxlength='75')
-  div
-    label(for='email') Email
-    input#email(type='email', name='email', placeholder='abc@example.com')
-  div
-    label(for='age') Age
-    input#age(type='number', name='age', min='18', max='60', step='1' placeholder='Age must be between 18 and 60')
-  div
-    label(for='country') Country
-    input#country(list='countries-list', name='countries', type='text', placeholder='eg, India')
-  div
-    label(for='contact_no') Contact Number
-    input#contact_no(type='tel', name='contact_no', placeholder='eg, +XX-XXXXXXXX')
-  fieldset
+form.form(action='', method='POST')
+  .form__group
+    label.form__label(for='name') Name
+    input#name.form__control(type='text', name='name', placeholder='Enter full name', maxlength='75')
+
+  .form__group
+    label.form__label(for='email') Email
+    input#email.form__control(type='email', name='email', placeholder='abc@example.com')
+
+  .form__group
+    label.form__label(for='age') Age
+    input#age.form__control(type='number', name='age', min='18', max='60', step='1' placeholder='Age must be between 18 and 60')
+
+  .form__group
+    label.form__label(for='country') Country
+    input#country.form__control(list='countries-list', name='countries', type='text', placeholder='eg, India')
+
+  .form__group
+    label.form__label(for='contact_no') Contact Number
+    input#contact_no.form__control(type='tel', name='contact_no', placeholder='eg, +XX-XXXXXXXX')
+
+  fieldset.form__group
     legend Gender
-    div
-      label(for='female') Female
-        input#female(type='radio', name='gender')
-    div
-      label(for='male') Male
-        input#male(type='radio', name='gender')
-    div
-      label(for='cnd') Choose not to disclose
-        input#cnd(type='radio', name='gender')
-  div
-    label(for='pizza') What is your favourite pizza topping?
-    select#pizza(name='pizza')
+    .form__group
+      label.form__label(for='female') Female
+        input#female.form__control(type='radio', name='gender')
+    .form__group
+      label.form__label(for='male') Male
+        input#male.form__control(type='radio', name='gender')
+    .form__group
+      label.form__label(for='cnd') Choose not to disclose
+        input#cnd.form__control(type='radio', name='gender')
+
+  .form__group
+    label.form__label(for='pizza') What is your favourite pizza topping?
+    select.form__control#pizza(name='pizza')
       optgroup(label='Vegetarian')
         option(value='gia') Giardiniera
         option(value='mar') Margherita
@@ -37,20 +43,24 @@ form(action='', method='POST')
         option(value='fou') Four Seasons
       optgroup(label='Fish')
         option(value='tun') Tuna
-  fieldset
-    div
+
+
+  fieldset.form__group
+    .form__group
       legend How did you hear about us?
-    div
-      label(for='news_letter') Newsletter
-        input#news_letter(type='checkbox', name='how')
-    div
-      label(for='friends') Friends
-        input#friends(type='checkbox', name='how')
-    div
-      label(for='others') Others
-        input#others(type='checkbox', name='how')
-  div
-    button(type='submit') Submit
+    .form__group
+      label.form__label(for='news_letter') Newsletter
+        input#news_letter.form__control(type='checkbox', name='how')
+    .form__group
+      label.form__label(for='friends') Friends
+        input#friends.form__control(type='checkbox', name='how')
+    .form__group
+      label.form__label(for='others') Others
+        input#others.form__control(type='checkbox', name='how')
+
+  .form__group
+    button.form__control.btn-primary(type='submit') Submit
+
 datalist#countries-list
   option(value='')
   option(value='Afghanistan') Afghanistan
@@ -294,3 +304,4 @@ datalist#countries-list
   option(value='Yemen') Yemen
   option(value='Zambia') Zambia
   option(value='Zimbabwe') Zimbabwe
+
